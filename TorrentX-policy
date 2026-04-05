@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorrentX — Privacy Policy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --bg: #0a0a0a;
+            --surface: #111111;
+            --text: #e0e0e0;
+            --accent: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid #222222;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        header {
+            background: #000000;
+            padding: 70px 40px 55px;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            width: 92px;
+            height: 92px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            font-weight: 700;
+            color: white;
+            border: 3px solid white;
+            border-radius: 50%;
+            letter-spacing: -2px;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 15px;
+            color: #777;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            padding: 55px 45px;
+        }
+
+        section {
+            margin-bottom: 52px;
+        }
+
+        h2 {
+            font-size: 23px;
+            color: white;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        h2 svg {
+            width: 26px;
+            height: 26px;
+            stroke: white;
+            fill: none;
+            stroke-width: 2.2;
+        }
+
+        p, li {
+            font-size: 15.8px;
+            color: #cccccc;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 28px;
+        }
+
+        li {
+            margin-bottom: 11px;
+        }
+
+        .highlight {
+            background: #1a1a1a;
+            padding: 24px;
+            border-radius: 14px;
+            border-left: 5px solid #ffffff;
+            margin: 28px 0;
+            font-weight: 500;
+        }
+
+        .last-updated {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin: 40px 0 20px;
+        }
+
+        footer {
+            background: #000;
+            padding: 45px 40px;
+            text-align: center;
+            font-size: 13.5px;
+            color: #666;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">X</div>
+            <h1>TorrentX</h1>
+            <p class="tagline">Free • Ad-Free • Private • Powerful</p>
+        </header>
+
+        <div class="content">
+
+            <section>
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    Privacy Policy
+                </h2>
+                <p><strong>Effective Date:</strong> April 05, 2026</p>
+                <p><strong>Last Updated:</strong> April 05, 2026</p>
+            </section>
+
+            <section>
+                <p>TorrentX is a completely free, open-source Android application that provides high-performance BitTorrent downloading and intelligent media downloading with a focus on privacy, speed, and simplicity.</p>
+                
+                <div class="highlight">
+                    We believe in radical transparency: <strong>TorrentX collects almost no personal data</strong> and never sells or shares user information.
+                </div>
+            </section>
+
+            <!-- Core Features -->
+            <section>
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+                    1. What TorrentX Does
+                </h2>
+                <p>TorrentX offers full BitTorrent support using the powerful libtorrent4j engine, intelligent media downloading from popular platforms, automatic 4K/HDR muxing with FFmpeg, sequential downloading, background execution via WorkManager and Foreground Services, and advanced I/O optimization using Zero-Copy DirectByteBuffer technology.</p>
+            </section>
+
+            <!-- Data Collection -->
+            <section>
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    2. Information We Do NOT Collect
+                </h2>
+                <ul>
+                    <li>No names, emails, phone numbers, or any personal identifiers</li>
+                    <li>No analytics, crash reporting, or tracking SDKs</li>
+                    <li>No advertising IDs or device fingerprinting</li>
+                    <li>No cloud accounts or login systems</li>
+                    <li>No data is sent to any external servers owned by us</li>
+                </ul>
+            </section>
+
+            <!-- Technical Data -->
+            <section>
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2.01 2.01 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2"/></svg>
+                    3. Technical Information Processed Locally
+                </h2>
+                <p>The following information is handled <strong>only on your device</strong>:</p>
+                <ul>
+                    <li>Magnet links, .torrent files, and media URLs you manually add</li>
+                    <li>Peer-to-peer connections required by the BitTorrent protocol</li>
+                    <li>Download progress, resume data, and local settings stored in SQLite</li>
+                </ul>
+                <p>Your IP address may be visible to other peers and trackers as part of normal BitTorrent operation — this is unavoidable in any torrent client.</p>
+            </section>
+
+            <!-- Permissions -->
+            <section>
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    4. Required Android Permissions & Their Purpose
+                </h2>
+                <ul>
+                    <li><strong>INTERNET</strong> — To connect to peers, trackers, and media servers</li>
+                    <li><strong>ACCESS_NETWORK_STATE</strong> — To enforce WiFi-Only mode</li>
+                    <li><strong>READ/WRITE_EXTERNAL_STORAGE</strong> — To save downloaded files and read .torrent files</li>
+                    <li><strong>FOREGROUND_SERVICE</strong> — To keep downloads running in background</li>
+                    <li><strong>POST_NOTIFICATIONS</strong> — To show download progress and status</li>
+                    <li><strong>WAKE_LOCK</strong> — To prevent device from sleeping during active file writing</li>
+                </ul>
+            </section>
+
+            <!-- User Controls -->
+            <section>
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
+                    5. Your Privacy Controls
+                </h2>
+                <p>You have complete control over your privacy:</p>
+                <ul>
+                    <li>WiFi-Only mode, speed throttling, and battery saver</li>
+                    <li>Encryption modes and proxy support (SOCKS5, HTTP)</li>
+                    <li>Port randomization and peer discovery controls</li>
+                    <li>Option to stop seeding at 100% to save bandwidth</li>
+                    <li>Full ability to delete all downloads and app data locally</li>
+                </ul>
+            </section>
+
+            <div class="last-updated">
+                This Privacy Policy may be updated from time to time. We recommend reviewing it periodically.<br>
+                By using TorrentX, you agree to this policy.
+            </div>
+        </div>
+
+        <footer>
+            <p>TorrentX — Built for users who value speed, simplicity, and privacy.</p>
+            <p>Completely Free • No Ads • No Tracking • No Compromises</p>
+        </footer>
+    </div>
+</body>
+</html>
