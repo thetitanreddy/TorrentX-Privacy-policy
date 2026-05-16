@@ -1,3 +1,6 @@
+Here is the updated HTML. The font has been successfully swapped to **Lora**, the typography stack is adjusted for serifs, the dates are brought up to today's standard (May 16, 2026), and the **Autcust.Dev** branding has been seamlessly integrated to match your premium Play Store presence.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TorrentX — Privacy Policy</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 
         :root {
             --bg: #0a0a0a;
@@ -17,12 +20,14 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: 'Inter', system-ui, sans-serif;
+            font-family: 'Lora', Georgia, serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.75;
+            line-height: 1.8;
             padding: 40px 20px;
             min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
@@ -49,25 +54,29 @@
             align-items: center;
             justify-content: center;
             font-size: 52px;
-            font-weight: 700;
+            font-weight: 600;
             color: white;
             border: 3px solid white;
             border-radius: 50%;
             letter-spacing: -2px;
+            font-family: 'Lora', serif;
         }
 
         h1 {
-            font-size: 34px;
-            font-weight: 600;
+            font-size: 36px;
+            font-weight: 500;
             color: white;
             margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
 
         .tagline {
-            font-size: 15px;
-            color: #777;
-            letter-spacing: 2px;
+            font-size: 14px;
+            color: #888;
+            letter-spacing: 2.5px;
             text-transform: uppercase;
+            font-family: system-ui, -apple-system, sans-serif; /* Keeps the tagline crisp and modern */
+            font-weight: 500;
         }
 
         .content {
@@ -79,12 +88,14 @@
         }
 
         h2 {
-            font-size: 23px;
+            font-size: 24px;
+            font-weight: 500;
             color: white;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
             display: flex;
             align-items: center;
             gap: 14px;
+            letter-spacing: -0.3px;
         }
 
         h2 svg {
@@ -96,9 +107,9 @@
         }
 
         p, li {
-            font-size: 15.8px;
+            font-size: 16.5px;
             color: #cccccc;
-            margin-bottom: 14px;
+            margin-bottom: 16px;
         }
 
         ul {
@@ -106,38 +117,59 @@
         }
 
         li {
-            margin-bottom: 11px;
+            margin-bottom: 12px;
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 600;
         }
 
         .highlight {
             background: #1a1a1a;
-            padding: 24px;
+            padding: 26px;
             border-radius: 14px;
-            border-left: 5px solid #ffffff;
-            margin: 28px 0;
+            border-left: 4px solid #ffffff;
+            margin: 32px 0;
             font-weight: 500;
+            font-style: italic;
+            color: #eeeeee;
         }
 
         .last-updated {
             text-align: center;
-            font-size: 14px;
-            color: #555;
+            font-size: 15px;
+            color: #666;
             margin: 40px 0 20px;
+            font-style: italic;
         }
 
         footer {
             background: #000;
             padding: 45px 40px;
             text-align: center;
-            font-size: 13.5px;
-            color: #666;
+            font-size: 14px;
+            color: #777;
             border-top: 1px solid #222;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer p:last-child {
+            margin-bottom: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
         <header>
             <div class="logo">X</div>
             <h1>TorrentX</h1>
@@ -151,8 +183,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                     Privacy Policy
                 </h2>
-                <p><strong>Effective Date:</strong> April 05, 2026</p>
-                <p><strong>Last Updated:</strong> April 05, 2026</p>
+                <p><strong>Effective Date:</strong> May 16, 2026</p>
+                <p><strong>Last Updated:</strong> May 16, 2026</p>
             </section>
 
             <section>
@@ -163,7 +195,6 @@
                 </div>
             </section>
 
-            <!-- Core Features -->
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
@@ -172,7 +203,6 @@
                 <p>TorrentX offers full BitTorrent support using the powerful libtorrent4j engine, intelligent media downloading from popular platforms, automatic 4K/HDR muxing with FFmpeg, sequential downloading, background execution via WorkManager and Foreground Services, and advanced I/O optimization using Zero-Copy DirectByteBuffer technology.</p>
             </section>
 
-            <!-- Data Collection -->
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -187,7 +217,6 @@
                 </ul>
             </section>
 
-            <!-- Technical Data -->
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2.01 2.01 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2"/></svg>
@@ -202,7 +231,6 @@
                 <p>Your IP address may be visible to other peers and trackers as part of normal BitTorrent operation — this is unavoidable in any torrent client.</p>
             </section>
 
-            <!-- Permissions -->
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -218,7 +246,6 @@
                 </ul>
             </section>
 
-            <!-- User Controls -->
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
@@ -241,9 +268,11 @@
         </div>
 
         <footer>
-            <p>TorrentX — Built for users who value speed, simplicity, and privacy.</p>
+            <p>TorrentX by Autcust.Dev — Built for users who value speed, simplicity, and privacy.</p>
             <p>Completely Free • No Ads • No Tracking • No Compromises</p>
         </footer>
     </div>
 </body>
 </html>
+
+```
