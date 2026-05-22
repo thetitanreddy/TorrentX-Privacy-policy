@@ -72,7 +72,7 @@
             color: #888;
             letter-spacing: 2.5px;
             text-transform: uppercase;
-            font-family: system-ui, -apple-system, sans-serif; /* Keeps the tagline crisp and modern */
+            font-family: system-ui, -apple-system, sans-serif;
             font-weight: 500;
         }
 
@@ -180,15 +180,15 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                     Privacy Policy
                 </h2>
-                <p><strong>Effective Date:</strong> May 16, 2026</p>
-                <p><strong>Last Updated:</strong> May 16, 2026</p>
+                <p><strong>Effective Date:</strong> May 22, 2026</p>
+                <p><strong>Last Updated:</strong> May 22, 2026</p>
             </section>
 
             <section>
                 <p>TorrentX is a completely free, open-source Android application that provides high-performance BitTorrent downloading and intelligent media downloading with a focus on privacy, speed, and simplicity.</p>
                 
                 <div class="highlight">
-                    We believe in radical transparency: <strong>TorrentX collects almost no personal data</strong> and never sells or shares user information.
+                    We believe in radical transparency: <strong>TorrentX collects no personal identifying data</strong> and never sells your information. We only collect anonymous crash logs to ensure app stability.
                 </div>
             </section>
 
@@ -202,28 +202,41 @@
 
             <section>
                 <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    2. Anonymous Diagnostics & Crash Reporting
+                </h2>
+                <p>To ensure TorrentX runs smoothly and to help us quickly identify bugs in our native C++ engine, we utilize <strong>Google Firebase Crashlytics</strong>. If the app encounters a fatal error or crash, the following anonymous data is automatically collected:</p>
+                <ul>
+                    <li><strong>Crash Logs & Stack Traces:</strong> Information detailing exactly which line of code caused the app to fail.</li>
+                    <li><strong>Device Diagnostics:</strong> Non-identifying device states at the time of the crash, such as device model, OS version, orientation, and available RAM/storage.</li>
+                    <li><strong>Installation UUID:</strong> A randomly generated, anonymous identifier used solely to count how many individual devices are affected by a specific bug.</li>
+                </ul>
+                <p>This data is strictly utilized for analytics and stability improvements. It is encrypted in transit, processed securely on Google's servers, and is <strong>never</strong> used for advertising or cross-app tracking.</p>
+            </section>
+
+            <section>
+                <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    2. Information We Do NOT Collect
+                    3. Information We Do NOT Collect
                 </h2>
                 <ul>
-                    <li>No names, emails, phone numbers, or any personal identifiers</li>
-                    <li>No analytics, crash reporting, or tracking SDKs</li>
-                    <li>No advertising IDs or device fingerprinting</li>
-                    <li>No cloud accounts or login systems</li>
-                    <li>No data is sent to any external servers owned by us</li>
+                    <li>No names, emails, phone numbers, or any personal identifiers.</li>
+                    <li>No advertising IDs or device fingerprinting.</li>
+                    <li>No cloud accounts or login systems.</li>
+                    <li>No browsing history or tracking of the files you download.</li>
                 </ul>
             </section>
 
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2.01 2.01 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2"/></svg>
-                    3. Technical Information Processed Locally
+                    4. Technical Information Processed Locally
                 </h2>
                 <p>The following information is handled <strong>only on your device</strong>:</p>
                 <ul>
-                    <li>Magnet links, .torrent files, and media URLs you manually add</li>
-                    <li>Peer-to-peer connections required by the BitTorrent protocol</li>
-                    <li>Download progress, resume data, and local settings stored in SQLite</li>
+                    <li>Magnet links, .torrent files, and media URLs you manually add.</li>
+                    <li>Peer-to-peer connections required by the BitTorrent protocol.</li>
+                    <li>Download progress, resume data, and local settings stored in SQLite.</li>
                 </ul>
                 <p>Your IP address may be visible to other peers and trackers as part of normal BitTorrent operation — this is unavoidable in any torrent client.</p>
             </section>
@@ -231,30 +244,30 @@
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                    4. Required Android Permissions & Their Purpose
+                    5. Required Android Permissions & Their Purpose
                 </h2>
                 <ul>
-                    <li><strong>INTERNET</strong> — To connect to peers, trackers, and media servers</li>
-                    <li><strong>ACCESS_NETWORK_STATE</strong> — To enforce WiFi-Only mode</li>
-                    <li><strong>READ/WRITE_EXTERNAL_STORAGE</strong> — To save downloaded files and read .torrent files</li>
-                    <li><strong>FOREGROUND_SERVICE</strong> — To keep downloads running in background</li>
-                    <li><strong>POST_NOTIFICATIONS</strong> — To show download progress and status</li>
-                    <li><strong>WAKE_LOCK</strong> — To prevent device from sleeping during active file writing</li>
+                    <li><strong>INTERNET</strong> — To connect to peers, trackers, and media servers.</li>
+                    <li><strong>ACCESS_NETWORK_STATE</strong> — To enforce WiFi-Only mode.</li>
+                    <li><strong>READ/WRITE_EXTERNAL_STORAGE</strong> — To save downloaded files and read .torrent files.</li>
+                    <li><strong>FOREGROUND_SERVICE</strong> — To keep downloads running in the background.</li>
+                    <li><strong>POST_NOTIFICATIONS</strong> — To show download progress and status.</li>
+                    <li><strong>WAKE_LOCK</strong> — To prevent the device from sleeping during active file writing.</li>
                 </ul>
             </section>
 
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
-                    5. Your Privacy Controls
+                    6. Your Privacy Controls
                 </h2>
                 <p>You have complete control over your privacy:</p>
                 <ul>
-                    <li>WiFi-Only mode, speed throttling, and battery saver</li>
-                    <li>Encryption modes and proxy support (SOCKS5, HTTP)</li>
-                    <li>Port randomization and peer discovery controls</li>
-                    <li>Option to stop seeding at 100% to save bandwidth</li>
-                    <li>Full ability to delete all downloads and app data locally</li>
+                    <li>WiFi-Only mode, speed throttling, and battery saver.</li>
+                    <li>Encryption modes and proxy support (SOCKS5, HTTP).</li>
+                    <li>Port randomization and peer discovery controls.</li>
+                    <li>Option to stop seeding at 100% to save bandwidth.</li>
+                    <li>Full ability to delete all downloads and app data locally.</li>
                 </ul>
             </section>
 
@@ -265,13 +278,9 @@
         </div>
 
         <footer>
-            <p>TorrentX by Autcust.Dev — Built for users who value speed, simplicity, and privacy.</p>
-            <p>Completely Free • No Ads • No Tracking • No Compromises</p>
+            <p>TorrentX by AutcustDev — Built for users who value speed, simplicity, and privacy.</p>
+            <p>Completely Free • No Ads • No Ad-Tracking • No Compromises</p>
         </footer>
     </div>
 </body>
 </html>
-
-
-
-"update only required info"
