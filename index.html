@@ -72,7 +72,7 @@
             color: #888;
             letter-spacing: 2.5px;
             text-transform: uppercase;
-            font-family: system-ui, -apple-system, sans-serif; /* Keeps the tagline crisp and modern */
+            font-family: system-ui, -apple-system, sans-serif;
             font-weight: 500;
         }
 
@@ -147,7 +147,7 @@
             text-align: center;
             font-size: 14px;
             color: #777;
-            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
         }
 
         footer p {
@@ -180,15 +180,15 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                     Privacy Policy
                 </h2>
-                <p><strong>Effective Date:</strong> May 16, 2026</p>
-                <p><strong>Last Updated:</strong> May 16, 2026</p>
+                <p><strong>Effective Date:</strong> May 22, 2026</p>
+                <p><strong>Last Updated:</strong> May 22, 2026</p>
             </section>
 
             <section>
-                <p>TorrentX is a completely free, open-source Android application that provides high-performance BitTorrent downloading and intelligent media downloading with a focus on privacy, speed, and simplicity.</p>
+                <p>TorrentX is a free Android application that provides high-performance BitTorrent downloading with a focus on privacy, speed, and simplicity.</p>
                 
                 <div class="highlight">
-                    We believe in radical transparency: <strong>TorrentX collects almost no personal data</strong> and never sells or shares user information.
+                    We believe in transparency: <strong>TorrentX does not collect identifying personal information</strong>. We solely utilize anonymous crash reporting to maintain app stability and improve performance.
                 </div>
             </section>
 
@@ -197,7 +197,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
                     1. What TorrentX Does
                 </h2>
-                <p>TorrentX offers full BitTorrent support using the powerful libtorrent4j engine, intelligent media downloading from popular platforms, automatic 4K/HDR muxing with FFmpeg, sequential downloading, background execution via WorkManager and Foreground Services, and advanced I/O optimization using Zero-Copy DirectByteBuffer technology.</p>
+                <p>TorrentX offers full BitTorrent support using a native engine, automatic 4K/HDR muxing, background execution, and advanced I/O optimization.</p>
             </section>
 
             <section>
@@ -206,67 +206,48 @@
                     2. Information We Do NOT Collect
                 </h2>
                 <ul>
-                    <li>No names, emails, phone numbers, or any personal identifiers</li>
-                    <li>No analytics, crash reporting, or tracking SDKs</li>
-                    <li>No advertising IDs or device fingerprinting</li>
-                    <li>No cloud accounts or login systems</li>
-                    <li>No data is sent to any external servers owned by us</li>
+                    <li>No names, emails, phone numbers, or personal identifiers</li>
+                    <li>No advertising IDs or device fingerprinting for marketing</li>
+                    <li>No cloud accounts or centralized login systems</li>
                 </ul>
             </section>
 
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2.01 2.01 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2"/></svg>
-                    3. Technical Information Processed Locally
+                    3. Diagnostics & Crash Reporting
                 </h2>
-                <p>The following information is handled <strong>only on your device</strong>:</p>
+                <p>To identify bugs and resolve crashes in our native engine, TorrentX uses a third-party analytics service (Google Firebase Crashlytics). If the app crashes, the following anonymous data is collected strictly for analytics and debugging:</p>
                 <ul>
-                    <li>Magnet links, .torrent files, and media URLs you manually add</li>
-                    <li>Peer-to-peer connections required by the BitTorrent protocol</li>
-                    <li>Download progress, resume data, and local settings stored in SQLite</li>
+                    <li><strong>Crash Logs:</strong> Stack traces identifying the line of code that failed.</li>
+                    <li><strong>Diagnostics:</strong> Device state at the time of the crash (e.g., OS version, memory usage).</li>
+                    <li><strong>Device IDs:</strong> An anonymous, randomly generated UUID to measure the number of users experiencing a specific issue.</li>
                 </ul>
-                <p>Your IP address may be visible to other peers and trackers as part of normal BitTorrent operation — this is unavoidable in any torrent client.</p>
-            </section>
-
-            <section>
-                <h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                    4. Required Android Permissions & Their Purpose
-                </h2>
-                <ul>
-                    <li><strong>INTERNET</strong> — To connect to peers, trackers, and media servers</li>
-                    <li><strong>ACCESS_NETWORK_STATE</strong> — To enforce WiFi-Only mode</li>
-                    <li><strong>READ/WRITE_EXTERNAL_STORAGE</strong> — To save downloaded files and read .torrent files</li>
-                    <li><strong>FOREGROUND_SERVICE</strong> — To keep downloads running in background</li>
-                    <li><strong>POST_NOTIFICATIONS</strong> — To show download progress and status</li>
-                    <li><strong>WAKE_LOCK</strong> — To prevent device from sleeping during active file writing</li>
-                </ul>
+                <p>This data is transmitted securely, stored temporarily on Google's servers, and cannot be used to personally identify you.</p>
             </section>
 
             <section>
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
-                    5. Your Privacy Controls
+                    4. Technical Information Processed Locally
                 </h2>
-                <p>You have complete control over your privacy:</p>
+                <p>The following information is handled <strong>only locally on your device</strong>:</p>
                 <ul>
-                    <li>WiFi-Only mode, speed throttling, and battery saver</li>
-                    <li>Encryption modes and proxy support (SOCKS5, HTTP)</li>
-                    <li>Port randomization and peer discovery controls</li>
-                    <li>Option to stop seeding at 100% to save bandwidth</li>
-                    <li>Full ability to delete all downloads and app data locally</li>
+                    <li>Magnet links, .torrent files, and media URLs</li>
+                    <li>Download progress, resume data, and settings</li>
                 </ul>
+                <p>Note: Your IP address may be visible to other peers and trackers as part of standard BitTorrent protocol operation.</p>
             </section>
 
             <div class="last-updated">
-                This Privacy Policy may be updated from time to time. We recommend reviewing it periodically.<br>
+                This Privacy Policy may be updated from time to time.<br>
                 By using TorrentX, you agree to this policy.
             </div>
         </div>
 
         <footer>
-            <p>TorrentX by Autcust.Dev — Built for users who value speed, simplicity, and privacy.</p>
-            <p>Completely Free • No Ads • No Tracking • No Compromises</p>
+            <p>TorrentX by AutcustDev</p>
+            <p>Built for users who value speed, simplicity, and privacy.</p>
         </footer>
     </div>
 </body>
